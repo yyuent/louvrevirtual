@@ -1,0 +1,183 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>LOUVRE | Museo & Tour Virtual</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/identificador.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Historia</a>
+          <a href="#secc2">Exposiciones</a>
+          <a href="#secc4">Tour Virtual</a>
+        </div>
+    </header>
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Historia</h1>
+				<div class="imgs-secc-1">
+					<!--contenedor con las dos imagenes en su version de escritorio-->
+					<div class="par-imgs-escritorio">
+						<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+						<img src="imagenes/louvre.jpeg" title="Img 1a">
+					</div>
+					<!--contenedor con las dos imagenes en su version mobile-->
+					<div class="par-imgs-mobile">
+						<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+						<img src="imagenes/louvre.jpeg" title="Img 1a">
+					</div>
+				</div>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+				<p>Inaugurado a finales del siglo XVIII, el Museo del Louvre es el museo más importante de Francia y uno de los más visitados del mundo. Actualmente recibe más de ocho millones de visitantes cada año.</p>
+				<br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Formado a partir de las colecciones de la monarquía francesa y las expoliaciones realizadas durante el imperio Napoleónico, el Museo del Louvre abrió sus puertas en 1793 mostrando un nuevo modelo de museo, que pasaba de las manos de las clases dirigentes al disfrute del público general.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>El Museo del Louvre se encuentra alojado en el Palacio del Louvre, una fortaleza del siglo XII que fue ampliada y reformada en diversas ocasiones. Antes de que se convirtiera en museo, algunos monarcas como Carlos V y Felipe II utilizaron el palacio como residencia real en la que acumulaban sus colecciones artísticas.</p>
+				<br>
+				<p>Tras el traslado de la residencia real al Palacio de Versalles, el impresionante edificio de 160.000 metros cuadrados comenzaría su proceso de transformación en uno de los museos más importantes del mundo. En 1989 se construyó una pirámide de cristal rompiendo la monotonía de los grandes bloques grises del museo, que en la actualidad sirve como puerta de acceso.</p>
+				<br>
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Exposiciones</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>La colección del Louvre comprende cerca de 300.000 obras anteriores a 1948, de las que se exponen aproximadamente 35.000.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>La inmensa colección está organizada de forma temática en diferentes departamentos: antigüedades orientales, antigüedades egipcias, antigüedades griegas, romanas y etruscas, historia del Louvre y el Louvre medieval, pintura, escultura, objetos de arte, artes gráficas y arte del Islam.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>Entre las pinturas más importantes del museo merece la pena destacar las siguientes:</p>
+				<ul>
+					<li><b>La Gioconda</b> de Leonardo da Vinci.</li>
+					<li><b>La Libertad Guiando al Pueblo</b> de Delacroix.</li>
+					<li><b>Las Bodas de Caná</b> de Veronés.</li>
+				</ul>
+				<br>
+				<p>Entre las esculturas más sobresalientes estan:</p>
+				<ul style="margin-bottom: 30px;">
+					<li><b>La Venus de Milo</b> de la Antigua Grecia.</li>
+					<li><b>El escriba sentado</b> del Antiguo Egipto.</li>
+					<li><b>La Victoria Alada de Samotracia</b> del periodo Helenístico de la Antigua Grecia.</li>
+				</ul>
+    		</div>
+    		<div class="imgs-secc-2">
+				<!--contenedor con las dos imagenes en su version de escritorio-->
+				<div class="par-imgs-escritorio2">
+					<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+					<img src="imagenes/a1.jpeg" title="Img 1a">
+					<img src="imagenes/a2.jpeg" title="Img 1a">
+				</div>
+				<!--contenedor con las dos imagenes en su version mobile-->
+				<div class="par-imgs-mobile">
+					<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+					<img src="imagenes/a1.jpeg" title="Img 1a">
+					<!--texto para la imagen-->
+					<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+					<img src="imagenes/a2.jpeg" title="Img 1b">
+					<!--texto para la imagen-->
+				</div>
+			</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Tour Virtual</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El Louvre es enorme y los amantes del arte podrían pasar varios días recorriéndolo. Para hacerse una idea general y ver las obras más destacadas, es necesario dedicar al menos una mañana completa para recorrer el museo.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Si te interesa el arte y quieres conocer a fondo las obras del Louvre, el museo pone a disposición de sus visitantes una audioguía con comentarios sobre cada tesoro de esta galería.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>Además, existe la modalidad de realizar un tour virtual para conocer todas las colecciones de arte con las que cuenta este maravilloso Museo, puedes acceder a ella en este sitio.</p>
+				<a class="sec4-btn" target="_blank" href="360visualizer.html">TOUR VIRTUAL AQUÍ</a>
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/louvre2.jpeg" title="Img 4">
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p>Todos los derechos a sus respectivos autores. YVYT®</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
